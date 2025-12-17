@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="sq">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Cake Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Cake Shop - Ëmbëlsira dhe Torta me porosi në Prishtinë. Cilësi, pasion dhe detaje në çdo kafshatë.">
+    <title>Home - Cake Shop Prishtina</title>
+    <!-- Fontet nga Google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Ikonat FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lenis Smooth Scroll CSS (Implicit) -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- HEADER (Sticky) -->
+    <header id="navbar">
         <div class="container">
             <nav>
                 <div class="logo">Cake Shop</div>
@@ -23,119 +40,153 @@
         </div>
     </header>
 
+    <!-- HERO SECTION (Reverted to classic immersive) -->
     <section class="hero">
-        <div class="container">
-            <h1>Embëlsira që tregojnë histori</h1>
-            <p style="max-width:600px; margin:0 auto 30px;">
-                Specialistë në torta artizanale për eventet tuaja më të rëndësishme. 
-                Cilësi, pasion dhe detaje në çdo kafshatë.
+        <div class="container" data-aos="fade-up" data-aos-duration="1200">
+            <h1>Ëmbëlsira që tregojnë histori</h1>
+            <p>
+                Specialistë në torta artizanale për eventet tuaja më të rëndësishme.
+                Cilësi, pasion dhe detaje që shijohen.
             </p>
-            <a href="products.html" class="btn btn-primary">Shiko Ëmbëlsirat</a>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="products.html" class="btn btn-primary">Zbulo Koleksionin</a>
+                <a href="gallery.html" class="btn btn-outline"
+                    style="margin-left: 15px; color: white; border-color: white;">Galeria</a>
+            </div>
         </div>
     </section>
 
+    <!-- FEATURED PRODUCTS -->
     <section class="section-padding">
         <div class="container">
-            <h2 style="text-align:center; margin-bottom:40px;">Të preferuarat e këtij muaji</h2>
+            <div class="text-center mb-60" data-aos="fade-up">
+                <h2>Të Preferuarat Tone</h2>
+                <p>Nga klientët tanë të lumtur, direkt në shtëpinë tuaj.</p>
+            </div>
+
             <div class="grid-3">
-                <div class="card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Torte"></div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"
+                            alt="Wedding Cake">
+                    </div>
                     <div class="card-info">
-                        <h3>Velvet Dream</h3>
-                        <p>E preferuara për ditëlindje.</p>
+                        <h3>Dasmë Princeshash</h3>
+                        <span class="price">120.00€</span>
+                        <a href="contact.html" class="btn btn-outline">Porosit Tani</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500" alt="Torte"></div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500" alt="Cupcakes">
+                    </div>
                     <div class="card-info">
-                        <h3>Choco Delight</h3>
-                        <p>Për adhuruesit e çokollatës.</p>
+                        <h3>Luxury Cupcakes</h3>
+                        <span class="price">15.00€ (6 copë)</span>
+                        <a href="contact.html" class="btn btn-outline">Porosit Tani</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500" alt="Torte"></div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=500" alt="Birthday Cake">
+                    </div>
                     <div class="card-info">
-                        <h3>Fruit Tart</h3>
-                        <p>Freski frutash natyrale.</p>
+                        <h3>Ditëlindje Magjike</h3>
+                        <span class="price">45.00€</span>
+                        <a href="contact.html" class="btn btn-outline">Porosit Tani</a>
                     </div>
                 </div>
             </div>
-            <div style="text-align:center; margin-top:40px;">
-                <a href="contact.html" class="btn btn-primary">Kërko Porosi të Veçantë</a>
+
+            <div class="text-center" style="margin-top:80px;" data-aos="fade-in">
+                <a href="services.html" class="btn btn-primary">Shiko Shërbimet Tona</a>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="section-padding" style="background-color: var(--white);">
+    <section class="section-padding bg-white">
         <div class="container">
-            <div class="section-title">
+            <div class="text-center mb-60" data-aos="fade-up">
                 <h2>Fjalët e Klientëve</h2>
                 <p>Besimi juaj është suksesi ynë</p>
             </div>
             <div class="grid-3">
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"Torta ishte jo vetëm e bukur vizualisht por edhe shija ishte fantastike. Të gjithë të ftuarit mbetën të kënaqur!"</p>
-                    <span class="client-name">- Blerta K.</span>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; color: #555;">"Torta ishte jo vetëm e bukur vizualisht por edhe shija
+                        ishte fantastike. Të gjithë të ftuarit
+                        mbetën të kënaqur!"</p>
+                    <span class="client-name" style="margin-top:20px; display:block;">- Blerta K.</span>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"Porosia erdhi në kohë rekord dhe paketimi ishte shumë i kujdesshëm. Cake Shop është zgjedhja ime e parë."</p>
-                    <span class="client-name">- Artan M.</span>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; color: #555;">"Porosia erdhi në kohë rekord dhe paketimi ishte shumë i
+                        kujdesshëm. Cake Shop është zgjedhja ime
+                        e parë për çdo festë."</p>
+                    <span class="client-name" style="margin-top:20px; display:block;">- Artan M.</span>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"Shije unike dhe detaje perfekte. Torta e dasmës ishte ëndërr. Faleminderit stafit!"</p>
-                    <span class="client-name">- Era & Genti</span>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; color: #555;">"Shije unike dhe detaje perfekte. Torta e dasmës ishte
+                        ëndërr. Faleminderit stafit për
+                        përkushtimin!"</p>
+                    <span class="client-name" style="margin-top:20px; display:block;">- Era & Genti</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INSTAGRAM FEED SECTION -->
-    <section>
-        <div class="insta-grid">
-            <!-- 6 Foto shembull për feed -->
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Insta 1">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400" alt="Insta 2">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1588195538326-c5f1f23fa438?w=400" alt="Insta 3">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1559553156-2e97137af16f?w=400" alt="Insta 4">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400" alt="Insta 5">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="insta-item">
-                <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400" alt="Insta 6">
-                <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
-            </div>
-        </div>
-        <div style="text-align:center; padding: 20px; background: #eee;">
-            <a href="#" style="font-weight:600;">@CakeShopPrishtina në Instagram</a>
-        </div>
+    <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1559553156-2e97137af16f?w=400" alt="Insta 4">
+        <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400" alt="Insta 5">
+        <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="insta-item">
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400" alt="Insta 6">
+        <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+    </div>
+    </div>
+    <div style="text-align:center; padding: 40px; background: #f9f9f9;">
+        <a href="#" style="font-weight:600; color: #2C3E50; letter-spacing: 1px;">NDIQNI @CakeShopPrishtina NË
+            INSTAGRAM</a>
+    </div>
     </section>
 
-    <!-- WHATSAPP BUTTON (Vendose kete ne cdo faqe HTML para </body>) -->
-    <a href="https://wa.me/38344000000" class="whatsapp-float" target="_blank">
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/38344000000" class="whatsapp-float" target="_blank" title="Na shkruani në WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cake Shop. Të gjitha të drejtat e rezervuara.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>&copy; 2025 Cake Shop. Krijuar me pasion.</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
