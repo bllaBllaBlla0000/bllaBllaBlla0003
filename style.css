@@ -1,0 +1,192 @@
+/* --- VARIABLAT E NGJYRAVE --- */
+:root {
+    --bg-main: #FDF6F0;
+    --accent-soft: #F8D7DA;
+    --neutral: #B0B0B0;
+    --accent-gold: #C8A68F;
+    --text-dark: #2C3E50;
+    --white: #FFFFFF;
+}
+
+/* --- RESET --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section-padding { padding: 60px 0; }
+
+/* --- BUTONAT --- */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+.btn-primary { background-color: var(--accent-gold); color: var(--white); }
+.btn-primary:hover { background-color: #b08d75; transform: translateY(-2px); }
+
+/* --- HEADER --- */
+header { background-color: var(--bg-main); padding: 20px 0; border-bottom: 1px solid #eee; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.8rem; font-weight: 700; color: var(--accent-gold); font-family: 'Playfair Display', serif; }
+.nav-links { display: flex; gap: 30px; }
+.nav-links a { font-weight: 500; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
+
+/* --- HERO (HOME) --- */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(253,246,240,0.8), rgba(253,246,240,0.6)), url('https://images.unsplash.com/photo-1626803775151-61d756612fcd?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; color: #2C3E50; }
+
+/* --- GRID SYSTEMS --- */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+/* --- CARDS (Products & Services) --- */
+.card { background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.card-img { height: 250px; overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; }
+.card-info { padding: 20px; text-align: center; }
+.price { display: block; color: var(--accent-gold); font-weight: 700; margin: 10px 0; }
+
+/* --- FORMS --- */
+.form-box { background: var(--white); padding: 40px; border-radius: 15px; max-width: 700px; margin: 0 auto; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; background: #fafafa;
+}
+
+/* --- FOOTER --- */
+footer { background-color: #2C3E50; color: var(--white); text-align: center; padding: 40px 0; margin-top: auto; }
+.social-links a { color: var(--white); margin: 0 10px; font-size: 1.5rem; }
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Simple hide for demo */
+    .hero h1 { font-size: 2.5rem; }
+}
+
+/* --- SHTESA TË REJA (WhatsApp, Testimonials, FAQ, Filters) --- */
+
+/* 1. WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    animation: pulse 2s infinite;
+}
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    color: #FFF;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* 2. Testimonials (Dëshmitë) */
+.testimonial-card {
+    background: #FFF;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    position: relative;
+}
+.testimonial-card i { color: var(--accent-gold); font-size: 1.5rem; margin-bottom: 15px; }
+.stars { color: #f1c40f; margin-bottom: 10px; font-size: 0.9rem; }
+.client-name { font-weight: 700; margin-top: 15px; display: block; color: var(--text-dark); }
+
+/* 3. Instagram Feed Preview */
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 foto në rresht */
+    gap: 0; 
+}
+.insta-item { height: 200px; position: relative; overflow: hidden; }
+.insta-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.insta-item:hover img { transform: scale(1.1); opacity: 0.8; }
+.insta-overlay {
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    display:flex; justify-content:center; align-items:center;
+    background: rgba(0,0,0,0.3); opacity:0; transition:0.3s;
+    color: #fff; font-size: 1.5rem;
+}
+.insta-item:hover .insta-overlay { opacity: 1; }
+/* Mobile fix per Instagram */
+@media (max-width: 768px) { .insta-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* 4. Filtrat e Produkteve */
+.filter-container { text-align: center; margin-bottom: 40px; }
+.filter-btn {
+    padding: 10px 25px;
+    border: 1px solid var(--accent-gold);
+    background: transparent;
+    color: var(--text-dark);
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--accent-gold);
+    color: #fff;
+}
+/* Produktet e fshehura nga filtri */
+.card.hide { display: none; }
+
+/* 5. FAQ (Pyetjet e Shpeshta) */
+.faq-item {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 5px solid var(--accent-gold);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.faq-item h4 { margin-bottom: 10px; cursor: pointer; display: flex; justify-content: space-between; }
+.faq-item p { color: #555; font-size: 0.95rem; }

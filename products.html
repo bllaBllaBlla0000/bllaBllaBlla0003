@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkte - Cake Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Cake Shop</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Produkte</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="services.html">Shërbime</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:50px;">Koleksioni Ynë</h2>
+            
+            <div class="grid-3">
+                <!-- Produkti 1 -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500" alt="Cupcakes"></div>
+                    <div class="card-info">
+                        <h3>Premium Cupcakes</h3>
+                        <span class="price">12.00€ (6 copë)</span>
+                        <p>Shije miks: Vanilje, Çokollatë, Luleshtrydhe.</p>
+                        <br>
+                        <a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+                <!-- Produkti 2 -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=500" alt="Wedding Cake"></div>
+                    <div class="card-info">
+                        <h3>Wedding Royal</h3>
+                        <span class="price">Nga 150.00€</span>
+                        <p>Tortë 3-katëshe për dasma elegante.</p>
+                        <br>
+                        <a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+                <!-- Produkti 3 -->
+                <div class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500" alt="Cheesecake"></div>
+                    <div class="card-info">
+                        <h3>Classic Cheesecake</h3>
+                        <span class="price">35.00€</span>
+                        <p>Me reçel boronicash të egra.</p>
+                        <br>
+                        <a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:20px;">Koleksioni Ynë</h2>
+            
+            <!-- BUTONAT E FILTRIT -->
+            <div class="filter-container">
+                <button class="filter-btn active" onclick="filterProducts('all')">Të Gjitha</button>
+                <button class="filter-btn" onclick="filterProducts('ditelindje')">Ditëlindje</button>
+                <button class="filter-btn" onclick="filterProducts('dasma')">Dasma</button>
+                <button class="filter-btn" onclick="filterProducts('te-tjera')">Të Tjera</button>
+            </div>
+
+            <!-- GRID I PRODUKTEVE ME DATA-CATEGORY -->
+            <div class="grid-3">
+                
+                <!-- Produkt: Ditëlindje -->
+                <div class="card product-item" data-category="ditelindje">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500" alt="Cake"></div>
+                    <div class="card-info">
+                        <h3>Berry Vanilla</h3>
+                        <span class="price">45.00€</span>
+                        <p>Ideale për ditëlindje.</p>
+                        <br><a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+
+                <!-- Produkt: Të Tjera -->
+                <div class="card product-item" data-category="te-tjera">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500" alt="Cupcakes"></div>
+                    <div class="card-info">
+                        <h3>Cupcakes Mix</h3>
+                        <span class="price">12.00€</span>
+                        <p>Embëlsira të vogla.</p>
+                        <br><a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+
+                <!-- Produkt: Dasma -->
+                <div class="card product-item" data-category="dasma">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=500" alt="Wedding"></div>
+                    <div class="card-info">
+                        <h3>Wedding Royal</h3>
+                        <span class="price">150.00€</span>
+                        <p>Elegancë për dasma.</p>
+                        <br><a href="contact.html" class="btn btn-primary">Porosit</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button edhe ketu -->
+    <a href="https://wa.me/38344000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lidhja me Script.js -->
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cake Shop. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri - Cake Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-item img { transition: transform 0.5s ease; border-radius: 10px; }
+        .gallery-item:hover img { transform: scale(1.03); cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Cake Shop</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="gallery.html" class="active">Galeri</a></li>
+                    <li><a href="services.html">Shërbime</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:20px;">Punimet Tona Reale</h2>
+            <p style="text-align:center; margin-bottom:50px; color:#777;">Të fotografuara me detaje të larta</p>
+            
+            <div class="grid-4">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500" alt="Galeri 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1588195538326-c5f1f23fa438?w=500" alt="Galeri 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500" alt="Galeri 3"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559553156-2e97137af16f?w=500" alt="Galeri 4"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500" alt="Galeri 5"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=500" alt="Galeri 6"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1619240866873-6599b41813d9?w=500" alt="Galeri 7"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?w=500" alt="Galeri 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cake Shop. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+</body>
+</html>
